@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+class Card extends Component {
+  props:{
+    'dataImgSrc':string,
+    'name':string
+  }
   render() {
     return (
       <div className="CardDeck">
-        <div class="card bg-dark text-white border-warning border-3">
-          <img class="card-img" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg">
-          <p class="card-text">Thresh.</p>
+        <div className="card bg-dark text-white border-warning border-3">
+          <img className="card-img" data-img-src={this.props.dataImgSrc}>
+          <p className="card-text">{name}</p>
         </div>
       </div>
     );
