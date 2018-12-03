@@ -11,8 +11,8 @@ class Card extends Component {
     return (
       <div className="CardDeck">
         <div className="card bg-dark text-white border-warning border-3">
-          <img className="card-img" data-img-src={this.props.dataImgSrc}>
-          <p className="card-text">{name}</p>
+          <img className="card-img" data-img-src={this.props.dataImgSrc}/>
+          <p className="card-text"></p>
         </div>
       </div>
     );
